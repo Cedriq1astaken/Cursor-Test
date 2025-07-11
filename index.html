@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object Tree Visualizer</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Object Tree Visualizer</h1>
+            
+            <div class="input-section">
+                <h3>Input JSON Object</h3>
+                <textarea id="jsonInput" placeholder='Enter JSON object here, e.g.:
+{
+  "name": "John",
+  "age": 30,
+  "address": {
+    "street": "123 Main St",
+    "city": "New York"
+  }
+}'></textarea>
+                <div class="input-controls">
+                    <button id="loadJsonBtn">Load JSON</button>
+                    <button id="clearJsonBtn">Clear</button>
+                </div>
+            </div>
+            
+            <canvas id="treeCanvas" width="1200" height="800"></canvas>
+            <div class="controls">
+                <button id="generateBtn">Generate Random Tree</button>
+                <button id="zoomInBtn">Zoom In</button>
+                <button id="zoomOutBtn">Zoom Out</button>
+                <button id="resetBtn">Reset View</button>
+            </div>
+        </div>
+    </body>
+</html>
